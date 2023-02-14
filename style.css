@@ -12,12 +12,14 @@
    --index: calc(1vw + 1vh);
    --gutter: 30px;
    --transition: .75s cubic-bezier(.075, .5, 0, 1);
-
+   --container-width-lg: 88%;
+   --container-width-md: 92%;
 }
 
 body {
 	scrollbar-width: none; 
    font-family: 'Montserrat', sans-serif;
+   background-color: black;
 }
 body::-webkit-scrollbar { 
 	display: none; 
@@ -56,5 +58,48 @@ body::-webkit-scrollbar {
 }
 
 .preloader-logo{
-   width: calc(var(--index) * 10);
+   width: 50%;
+}
+
+
+/* ---------------------------Nav */
+
+.container {
+   width: var(--container-width-lg);
+   margin: 0 auto;
+   max-width: 2160px;
+}
+
+img{
+   display: block;
+   object-fit: cover;
+   width: 100%;
+}
+
+nav{
+   height: 5rem;
+   width: 100vw;
+   top:  0;
+   left: 0;
+   z-index: 99;
+}
+
+.nav__container{
+   height: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.nav__toggle-btn{
+   display: none;
+}
+
+.nav__logo{
+   width: 7.5rem;
+}
+
+.nav__links{
+   display: flex;
+   gap: 4rem;
 }

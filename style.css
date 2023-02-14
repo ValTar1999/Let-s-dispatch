@@ -48,7 +48,7 @@ body::-webkit-scrollbar {
 #barconfrm{
    width: 1%;
    padding: 1px 0px;
-   background-color: white;
+   background-color: rgb(212, 0, 255);
 }
 
 .percent{

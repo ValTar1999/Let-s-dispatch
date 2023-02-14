@@ -19,7 +19,6 @@
 body {
 	scrollbar-width: none; 
    font-family: 'Montserrat', sans-serif;
-   background-color: black;
 }
 body::-webkit-scrollbar { 
 	display: none; 
@@ -61,9 +60,14 @@ body::-webkit-scrollbar {
    width: 50%;
 }
 
-
-
 /* ---------------------------Nav */
+
+.header-video{
+   width: auto;
+   position: absolute;
+   z-index: -2;
+}
+
 
 .container {
    width: var(--container-width-lg);

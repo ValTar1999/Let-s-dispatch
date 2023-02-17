@@ -30,3 +30,11 @@ function frame(){
        document.getElementById("percent").innerHTML = width + "%";
    }
 }
+
+
+
+
+
+
+
+

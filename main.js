@@ -34,7 +34,3 @@ function frame(){
 
 
 
-
-
-
-

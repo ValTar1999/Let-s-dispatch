@@ -608,3 +608,107 @@ body::-webkit-scrollbar {
 
 
 
+
+
+
+
+
+.container-button-2 {
+   width: 100%;
+   height: 100px;
+   display: flex;
+   justify-content: center;
+ }
+ 
+.services-block__left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-block__right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.block-up__telephone {
+  display: flex;
+  flex-direction: column;
+}
+.telephone-title {
+  color: var(--color_1);
+}
+.telephone-number {
+  color: var(--color_3);
+}
+
+
+.block-up__mail {
+  display: flex;
+  flex-direction: column;
+}
+.mail-title {
+  color: var(--color_1);
+}
+.mail {
+  color: var(--color_3);
+}
+
+.block-right__up{
+  display: flex;
+}
+
+.services-artical__logo{
+  width: calc(var(--index) * 12);
+}
+
+
+.contacts-article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+
+.contacts-article__content{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.services-artical__block{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.block-right__down {
+  display: flex;
+  flex-direction: column;
+}
+.block-down__title {
+  color: var(--color_1);
+}
+.social-block {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.fi-brands-facebook{
+  color: white;
+}
+
+.social-logo{
+  width: 2rem;
+  
+}
+
+.social-logo:hover{
+  width: 3rem;
+}

@@ -97,11 +97,23 @@ body::-webkit-scrollbar {
    text-align: center;
 }
 
+.main-map{
+  background-color: white;
+}
+
+
+.main-article__content{
+  width: calc(var(--index) * 40);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .main-artical__paragraph{
   max-width: calc(var(--index) * 30);
   font-size: calc(var(--index) * .9);
   margin-top: calc(var(--index) / 1.25);
-  
 }
 
  .main-artical__logo{
@@ -354,6 +366,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  margin: calc(var(--index) * 7);
 }
 
 
@@ -382,16 +395,6 @@ body::-webkit-scrollbar {
   animation: animated_text 5s ease-in-out infinite;
   -moz-animation: animated_text 5s ease-in-out infinite;
   -webkit-animation: animated_text 5s ease-in-out infinite;
-
-  transform: var(--main-aricle-transform);
-  transition: var(--transition);
-  will-change: transform;
-  
-  @keyframes animated_text {
-    0% { background-position: 0px 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0px 50%; }
-  }
 }
 
 @keyframes animated_text {
@@ -687,7 +690,8 @@ body::-webkit-scrollbar {
 
 .services-artical__block{
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 

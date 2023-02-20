@@ -27,7 +27,6 @@ body {
 	scrollbar-width: none; 
   font-family: 'Montserrat', sans-serif;
   line-height: 1.55;
-  
 }
 body::-webkit-scrollbar { 
 	display: none; 
@@ -80,11 +79,17 @@ body::-webkit-scrollbar {
 
 
 
+
+
+
+
+
  /* ---------------------------main-article */
 
 
  .main-article {
    min-height: 100vh;
+   min-width: 100vw;
    color: var(--text);
    display: flex;
    justify-content: center;
@@ -260,7 +265,7 @@ body::-webkit-scrollbar {
  .button__drow2,
  .button__drow2::before,
  .button__drow2::after {
-   background: var(--color_3);
+   background: var(--color_2);
  }
  .button:hover .button__drow1 {
    animation: drow1 ease-in 0.06s;
@@ -348,7 +353,6 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   min-height: 100vh;
 }
 
@@ -401,7 +405,7 @@ body::-webkit-scrollbar {
 
 .container{
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   justify-content: center;
   flex-wrap:wrap;
   z-index: 1;
@@ -659,6 +663,7 @@ body::-webkit-scrollbar {
 
 .block-right__up{
   display: flex;
+  flex-wrap: wrap;
 }
 
 .services-artical__logo{
@@ -669,8 +674,6 @@ body::-webkit-scrollbar {
 .contacts-article{
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
   min-height: 100vh;
 }
 
@@ -678,6 +681,7 @@ body::-webkit-scrollbar {
 .contacts-article__content{
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 
@@ -706,7 +710,6 @@ body::-webkit-scrollbar {
 
 .social-logo{
   width: 2rem;
-  
 }
 
 .social-logo:hover{

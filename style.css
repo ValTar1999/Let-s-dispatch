@@ -98,7 +98,11 @@ body::-webkit-scrollbar {
 }
 
 .main-map{
-  background-color: white;
+  position: absolute;
+  width: calc(var(--index)* 30);
+  z-index: -10;
+  opacity: .1;
+  background-color: insert rgba(255, 0, 0, 0.5) ;
 }
 
 
@@ -277,7 +281,7 @@ body::-webkit-scrollbar {
  .button__drow2,
  .button__drow2::before,
  .button__drow2::after {
-   background: var(--color_2);
+   background: rgb(255, 2, 221);
  }
  .button:hover .button__drow1 {
    animation: drow1 ease-in 0.06s;
@@ -463,6 +467,11 @@ body::-webkit-scrollbar {
   color: white;
 }
 
+.icon-cybertruck{
+  color: rgb(255, 255, 255);
+  width: 5.5rem;
+}
+
 .container .card .face.face1 .content i span{
   color: white;
   font-size: 4.5rem;
@@ -632,21 +641,25 @@ body::-webkit-scrollbar {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: calc(var(--index)*1);
 }
 
 .services-block__right{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
+  justify-content: space-around;
+  gap: calc(var(--index)*3);
 }
 
 .block-up__telephone {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 .telephone-title {
   color: var(--color_1);
+  font-weight: 600;
 }
 .telephone-number {
   color: var(--color_3);
@@ -656,9 +669,12 @@ body::-webkit-scrollbar {
 .block-up__mail {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 .mail-title {
   color: var(--color_1);
+  font-weight: 600
 }
 .mail {
   color: var(--color_3);
@@ -667,6 +683,8 @@ body::-webkit-scrollbar {
 .block-right__up{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: calc(var(--index)*2);
 }
 
 .services-artical__logo{
@@ -692,17 +710,23 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: calc(var(--index)*2);
 }
 
 
 .block-right__down {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: calc(var(--index)*1);
+  align-items: center;
 }
 .block-down__title {
   color: var(--color_1);
+  font-weight: 600;
 }
 .social-block {
+  gap: calc(var(--index)*3);
   display: flex;
   flex-direction: row;
 }
@@ -714,6 +738,7 @@ body::-webkit-scrollbar {
 
 .social-logo{
   width: 2rem;
+  transition: 400ms ease;
 }
 
 .social-logo:hover{

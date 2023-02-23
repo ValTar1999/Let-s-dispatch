@@ -101,7 +101,7 @@ body::-webkit-scrollbar {
   position: absolute;
   width: calc(var(--index)* 30);
   z-index: -10;
-  opacity: .1;
+  opacity: .3;
 }
 
 #location{

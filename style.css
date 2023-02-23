@@ -102,8 +102,23 @@ body::-webkit-scrollbar {
   width: calc(var(--index)* 30);
   z-index: -10;
   opacity: .1;
-  background-color: insert rgba(255, 0, 0, 0.5) ;
 }
+
+#location{
+  background-repeat: no-repeat;
+  background-size: 2rem;
+  background-image: url(./img/icons/location-black-png-10-removebg-preview.png),
+                    url(./img/icons/location-black-png-10-removebg-preview.png),
+                    url(./img/icons/location-black-png-10-removebg-preview.png),
+                    url(./img/icons/location-black-png-10-removebg-preview.png),
+                    url(./img/icons/location-black-png-10-removebg-preview.png),
+                    url(./img/icons/location-black-png-10-removebg-preview.png)
+                    ;
+background-position: right 40px top 60px, left 60px top 50px, right 170px bottom 130px, left 140px bottom 300px, center top 50px, center bottom 120px;
+
+}
+
+
 
 
 .main-article__content{

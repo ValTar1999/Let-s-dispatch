@@ -567,7 +567,7 @@ background-position: right 40px top 60px, left 60px top 50px, right 170px bottom
 .menu {
   padding: 0.5rem;
   background-color: #0000006c;
-  width: calc(var(--index)* 25);
+  width: calc(var(--index)* 30);
   display: flex;
   justify-content: center;
   border-radius: 1.5rem;

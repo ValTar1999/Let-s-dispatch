@@ -528,6 +528,12 @@ background-position: right 40px top 60px, left 60px top 50px, right 170px bottom
 }
 
 
+.nav-logo{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
 .menu {
   padding: 0.5rem;
   background-color: #0000006c;
@@ -639,6 +645,7 @@ background-position: right 40px top 60px, left 60px top 50px, right 170px bottom
 .telephone-title {
   color: var(--color_1);
   font-weight: 600;
+  font-size: 1.5rem;
 }
 .telephone-number {
   color: var(--color_3);
@@ -653,7 +660,8 @@ background-position: right 40px top 60px, left 60px top 50px, right 170px bottom
 }
 .mail-title {
   color: var(--color_1);
-  font-weight: 600
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 .mail {
   color: var(--color_3);
@@ -703,6 +711,7 @@ background-position: right 40px top 60px, left 60px top 50px, right 170px bottom
 .block-down__title {
   color: var(--color_1);
   font-weight: 600;
+  font-size: 1.5rem;
 }
 .social-block {
   gap: calc(var(--index)*3);
@@ -778,10 +787,6 @@ background-position: right 40px top 60px, left 60px top 50px, right 170px bottom
 
 
 
-.slider-article__content{
-  
-  
-}
 
 .slider-blocks{
   width: calc(var(--index)* 31);
@@ -809,6 +814,7 @@ background-position: right 40px top 60px, left 60px top 50px, right 170px bottom
   overflow: hidden;
 }
 .slider-block__2{
+  flex-direction: column;
   color: white;
   display: flex;
   text-align: center;
@@ -816,6 +822,12 @@ background-position: right 40px top 60px, left 60px top 50px, right 170px bottom
   font-size: calc(var(--index) * .9);
   margin-top: calc(var(--index) / 1.25);
     
+}
+
+.slider-block__title{
+  font-weight: 600;
+  text-decoration: underline;
+  color: var(--color_2);
 }
 
 .slider-block__img{

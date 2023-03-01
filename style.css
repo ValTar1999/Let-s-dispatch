@@ -779,11 +779,14 @@ background-position: right 40px top 60px, left 60px top 50px, right 170px bottom
 
 
 .slider-article__content{
-  width: calc(var(--index)* 38);
-  padding: calc(var(--index) * 2);
+  
+  
 }
 
-
+.slider-blocks{
+  width: calc(var(--index)* 31);
+  
+}
 
 
 .slider-article{

@@ -802,7 +802,6 @@ background-position: right 40px top 60px, left 60px top 50px, right 170px bottom
 .input-box textarea {
   width: calc(var(--index)* 25);
   height: 50%;
-  border-color: var(--color_2);
   border-radius: 0.5rem;
   background: #181818;
   padding: 0 20px;
@@ -823,10 +822,9 @@ background-position: right 40px top 60px, left 60px top 50px, right 170px bottom
   display: inline-block;
 }
 
-.form-button input[type="button"]{
+.form-button input[type="submit"]{
   border: none;
   transition: .5s ease;
-  color: black;
   padding:10px 25px;
   background: var(--color_2);
   border-radius: 0.5rem;

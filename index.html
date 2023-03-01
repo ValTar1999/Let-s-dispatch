@@ -4,8 +4,8 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="./style.css">
+
 
    <link rel="stylesheet" href="https://kit.fontawesome.com/3b1e6028ff.css" crossorigin="anonymous">
 
@@ -15,20 +15,14 @@
 
    <title>Let`s Dispatch</title>
 </head>
-<body onload="move()" id="background">
+<body  id="background">
 
 
 
 
 
 
-   <div id="preloader">
-      <img class="preloader-logo" src="./img/logo/LD_Logo_1_White.png" alt="">
-      <div id="percent" class="percent">1%</div>
-      <div id="bar">
-         <div id="barconfrm"></div>
-     </div>
-   </div>    
+    
 
 
 
@@ -51,9 +45,7 @@
         </span>
         <span class="link-title">Home</span>
       </a>
-      
-      
-    
+     
       <a href="#container-services" class="link">
         <span class="link-icon">
           <!-- icon -->
@@ -66,6 +58,21 @@
         </span>
         <span class="link-title">Services</span>
       </a>
+
+      <a href="#container-slider" class="link">
+        <span class="link-icon">
+          <!-- icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewBox="0 0 256 256">
+            <rect width="256" height="256" fill="none"></rect>
+            <polyline points="76.201 132.201 152.201 40.201 216 40 215.799 103.799 123.799 179.799" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+            <line x1="100" y1="156" x2="160" y2="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+            <path d="M82.14214,197.45584,52.201,227.397a8,8,0,0,1-11.31371,0L28.603,215.11268a8,8,0,0,1,0-11.31371l29.94113-29.94112a8,8,0,0,0,0-11.31371L37.65685,141.65685a8,8,0,0,1,0-11.3137l12.6863-12.6863a8,8,0,0,1,11.3137,0l76.6863,76.6863a8,8,0,0,1,0,11.3137l-12.6863,12.6863a8,8,0,0,1-11.3137,0L93.45584,197.45584A8,8,0,0,0,82.14214,197.45584Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+          </svg>
+          <!-- /icon -->
+        </span>
+        <span class="link-title">Slider</span>
+      </a>
+
       <a href="#container-contacts" class="link">
         <span class="link-icon">
           <!-- icon -->
@@ -78,6 +85,7 @@
         </span>
         <span class="link-title">Contacts</span>
       </a>
+
     </div>
 
 
@@ -101,7 +109,7 @@
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut excepturi accusamus accusantium saepe nobis suscipit voluptas dignissimos, laudantium veritatis nihil. Alias nam natus, at ab eveniet consequuntur illo eum! Reiciendis.
          </div>
 
-         <div class="container-button"> <a href="#container-contacts" class="button">
+         <div class="container-button"> <a class="button" id="open-pop__up">
             <div class="button__line"></div>
             <div class="button__line"></div> <span class="button__text">Let`s Dispatch</span>
             <div class="button__drow1"></div>
@@ -109,6 +117,23 @@
           </a>
         </div>
       </div>
+
+
+
+      <div class="pop-up" id="pop-up">
+        <div class="popo-up__container">
+          <div class="pop-up__body" id="pop-up__body">
+            <form class="pop-form" action="">
+              <input type="text" placeholder="Name">
+              <input type="text" placeholder="Phone">
+              <button>continue</button>
+            </form>
+            <div class="pop-up__close" id="pop-up__close">&#10006</div>
+          </div>
+        </div>
+
+      </div>
+
 
     </div>
 
@@ -187,6 +212,60 @@
       </div>
     </div>
           
+
+
+    <div id="container-slider">
+
+      <div class="slider-article">
+
+        <div class="slider-article__content">
+
+          <div class="services-artical__title">Slider</div>
+
+          <div class="slider-blocks">
+
+            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+    centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+    <swiper-slide class="slider-block">
+      <div class="slider-block__1">
+        <img class="slider-block__img" src="./img/images/LD_FB_Cover.png" alt="">
+      </div>
+      <div class="slider-block__2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius aperiam laborum minus. Ex, dolores quidem. Corporis temporibus eum voluptates, harum sed architecto. Natus dignissimos libero neque tenetur rem modi iusto.
+      </div>
+    </swiper-slide>
+    
+    <swiper-slide class="slider-block">
+      <div class="slider-block__1">
+        <img class="slider-block__img" src="./img/images/LD_FB_Cover.png" alt="">
+      </div>
+      <div class="slider-block__2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius aperiam laborum minus. Ex, dolores quidem. Corporis temporibus eum voluptates, harum sed architecto. Natus dignissimos libero neque tenetur rem modi iusto.
+      </div>
+    </swiper-slide>
+
+    <swiper-slide class="slider-block">
+      <div class="slider-block__1">
+        <img class="slider-block__img" src="./img/images/LD_FB_Cover.png" alt="">
+      </div>
+      <div class="slider-block__2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius aperiam laborum minus. Ex, dolores quidem. Corporis temporibus eum voluptates, harum sed architecto. Natus dignissimos libero neque tenetur rem modi iusto.
+      </div>
+    </swiper-slide>
+
+    
+    
+    </swiper-container>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+          </div>
+
+        </div>
+
+      </div>      
+
+    </div>
         
 
 

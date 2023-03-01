@@ -1,38 +1,4 @@
 
-// Preloader
-const tll = gsap.timeline({
-   paused: "true"
-});
-tll.to("#percent, #bar",{
-   duration:.2,
-   opacity: 0,
-   zIndex: -1
-});
-tll.to("#preloader",{
-   duration: .8,
-   width: "0%"
-});
-var width = 1;
-var bar = document.getElementById("barconfrm");
-var id;
-function move(){
-   id = setInterval(frame,10);
-
-}
-function frame(){
-   if(width>=100){
-       clearInterval(id);
-       tll.play();
-   }
-   else{
-       width++;
-       bar.style.width = width + "%";
-       document.getElementById("percent").innerHTML = width + "%";
-   }
-}
-
-
-
 
 
 // Parallax block
@@ -83,4 +49,24 @@ function handleMouseLeave() {
 
 
 
+const openPopUp = document.getElementById('open-pop__up');
+const closePopUp = document.getElementById('pop-up__close');
+const popUp = document.getElementById('pop-up');
 
+openPopUp.addEventListener('click', function(e){
+  e.preventDefault();
+  popUp.classList.add('active');
+})
+
+closePopUp.addEventListener('click', () => {
+  popUp.classList.remove('active');
+})
+
+
+
+
+
+
+
+
+ 

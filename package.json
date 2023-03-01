@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@flaticon/flaticon-uicons": "^2.0.1"
+    "@flaticon/flaticon-uicons": "^2.0.1",
+    "swiper": "^9.1.0"
   }
 }

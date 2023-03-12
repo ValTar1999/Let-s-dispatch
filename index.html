@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./style.css">
 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
    <link rel="stylesheet" href="https://kit.fontawesome.com/3b1e6028ff.css" crossorigin="anonymous">
 
@@ -48,16 +49,23 @@
         <span class="link-title">Services</span>
       </a>
 
-      <a href="#container-slider" class="link">
+      <a href="#container-guarantee" class="link">
         <span class="material-symbols-outlined link-icon"">
           info
           </span>
-        <span class="link-title">About US</span>
+        <span class="link-title">Guarantee</span>
+      </a>
+
+      <a href="#container-our_team" class="link">
+        <span class="material-symbols-outlined link-icon">
+          person
+          </span>
+        <span class="link-title">Our Team</span>
       </a>
 
       <a href="#container-contacts" class="link">
-        <span class="material-symbols-outlined link-icon">
-          person
+        <span class="material-symbols-outlined link-icon"">
+          call
           </span>
         <span class="link-title">Contacts</span>
       </a>
@@ -77,13 +85,9 @@
       
       <div class="main-article__content">
 
-        <img class="main-map" id="location" src="./img/icons/image.png">
-
          <img class="main-artical__logo" src="./img/logo/LD_Logo_1_White.png" alt="">
 
-         <div class="main-artical__paragraph">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut excepturi accusamus accusantium saepe nobis suscipit voluptas dignissimos, laudantium veritatis nihil. Alias nam natus, at ab eveniet consequuntur illo eum! Reiciendis.
-         </div>
+         <div class="services-artical__title-2">YOU DRIVE-WETAKE CARE</div>
 
          <div class="container-button"> <a class="button" id="open-pop__up">
             <div class="button__line"></div>
@@ -101,7 +105,7 @@
           <div class="pop-up__body" id="pop-up__body">
             <div class="pop-content">
               <div class="pop-title">Feedback Form</div>
-              <form class="pop-form" action="#" id="form" name="form">
+              <form class="pop-form" action="send_mail.php" id="form" name="form" method="POST">
                 <div class="input-box">
                   <input type="text" placeholder="Name" id="name" name="name" data-reg=""> 
                 </div>
@@ -205,59 +209,90 @@
           
 
 
-    <div id="container-slider">
+    <div id="container-guarantee">
 
-      <div class="slider-article">
+      <div class="guarantee-article">
 
-        <div class="slider-article__content">
+        <div class="guarantee-article__content">
 
-          <div class="services-artical__title">About US</div>
+          <div class="services-artical__title">Gross We Guarantee</div>
+          <div class="services-artical__title-2">Per Week</div>
 
-          <div class="slider-blocks">
+          <div class="guarantee-blocks">
 
-            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
-    centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
-    <swiper-slide class="slider-block">
-      <div class="slider-block__1">
-        <img class="slider-block__img" src="./img/images/LD_FB_Cover.png" alt="">
-      </div>
-      <div class="slider-block__2">
-        <div class="slider-block__title">Dispeching</div>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius aperiam laborum minus. Ex, dolores quidem. Corporis temporibus eum voluptates, harum sed architecto. Natus dignissimos libero neque tenetur rem modi iusto.
-      </div>
-    </swiper-slide>
-    
-    <swiper-slide class="slider-block">
-      <div class="slider-block__1">
-        <img class="slider-block__img" src="./img/images/LD_FB_Cover.png" alt="">
-      </div>
-      <div class="slider-block__2">
-        <div class="slider-block__title">Accounting</div>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius aperiam laborum minus. Ex, dolores quidem. Corporis temporibus eum voluptates, harum sed architecto. Natus dignissimos libero neque tenetur rem modi iusto.
-      </div>
-    </swiper-slide>
+            <div class="guarantee-block">
+              <div class="guarantee-block__up">
+                <div class="guarantee-block-title">2 Cars</div>
+              </div>
+              <div class="guarantee-block__down">
+                <div class="guarantee-block-title-2">$7000+</div>
+              </div>
+            </div>
 
-    <swiper-slide class="slider-block">
-      <div class="slider-block__1">
-        <img class="slider-block__img" src="./img/images/LD_FB_Cover.png" alt="">
-      </div>
-      <div class="slider-block__2">
-        <div class="slider-block__title">Recruiting</div>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius aperiam laborum minus. Ex, dolores quidem. Corporis temporibus eum voluptates, harum sed architecto. Natus dignissimos libero neque tenetur rem modi iusto.
-      </div>
-    </swiper-slide>
+            <div class="guarantee-block">
+              <div class="guarantee-block__up">
+                <div class="guarantee-block-title">3 Cars</div>
+              </div>
+              <div class="guarantee-block__down">
+                <div class="guarantee-block-title-2">$9000+</div>
+              </div>
+            </div>
 
-    
-    
-    </swiper-container>
+            <div class="guarantee-block">
+              <div class="guarantee-block__up">
+                <div class="guarantee-block-title">7 Cars</div>
+              </div>
+              <div class="guarantee-block__down">
+                <div class="guarantee-block-title-2">$13000+</div>
+              </div>
+            </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+            <div class="guarantee-block">
+              <div class="guarantee-block__up">
+                <div class="guarantee-block-title">9 Cars</div>
+              </div>
+              <div class="guarantee-block__down">
+                <div class="guarantee-block-title-2">$15000+</div>
+              </div>
+            </div>
 
           </div>
 
         </div>
 
       </div>      
+
+    </div>
+
+
+
+
+    <div id="container-our_team">
+
+      <div class="our_team-article">
+
+        <div class="our_team-article__content">
+
+          <div class="services-artical__title">Our Team</div>
+
+          <div class="slider-our_team">
+
+            <div class="wrapper">
+              <i id="left" class="fa-solid fa-angle-left"></i>
+              <div class="carousel">
+                <img src="./img/images/Avatar_01.png" alt="img" draggable="false">
+                <img src="./img/images/Avatar_02.png" alt="img" draggable="false">
+                <img src="./img/images/Avatar_03.png" alt="img" draggable="false">
+                <img src="./img/images/Avatar_04.png" alt="img" draggable="false">
+              </div>
+              <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
 
     </div>
         
@@ -278,7 +313,7 @@
 
               <img class="services-artical__logo" src="./img/logo/LD_Logo_2_White.png" alt="">
 
-              <div class="container-button-2"> <a href="mailto:support@gattor.com" class="button">
+              <div class="container-button-2"> <a href="mailto:letsdispatchme@gmail.com" class="button">
                 <div class="button__line"></div>
                 <div class="button__line"></div> <span class="button__text">Free Consultation</span>
                 <div class="button__drow1"></div>
@@ -290,6 +325,10 @@
 
             <div class="services-block__right">
 
+              <div>
+                <a class="services-artical__title-3" href="">About US</a>
+              </div>
+
               <div class="block-right__up">
 
                 <div class="block-up__telephone">
@@ -299,7 +338,7 @@
 
                 <div class="block-up__mail">
                   <div class="mail-title">Mail</div>
-                  <a href="mailto:support@gattor.com" class="mail">support@gattor.com</a>
+                  <a href="mailto:letsdispatchme@gmail.com" class="mail">letsdispatchme@gmail.com</a>
                 </div>
 
               </div>
@@ -310,8 +349,8 @@
 
                 <div class="social-block">
 
-                  <a href=""><img class="social-logo" src="./img/icons/icons8-facebook-100.png" alt=""></a>
-                  <a href=""><img class="social-logo" src="./img/icons/icons8-gmail-100.png" alt=""></a>
+                  <a href="https://m.facebook.com/Lets-Dispatch-107783164785961/posts/"><img class="social-logo" src="./img/icons/icons8-facebook-100.png" alt=""></a>
+                  <a href="mailto:letsdispatchme@gmail.com"><img class="social-logo" src="./img/icons/icons8-gmail-100.png" alt=""></a>
                   <a href=""><img class="social-logo" src="./img/icons/icons8-whatsapp-100.png" alt=""></a>
 
                 </div>

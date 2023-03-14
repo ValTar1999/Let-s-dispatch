@@ -16,6 +16,9 @@
    --color_3: rgb(142 01 255);
    --text: #ffffff;
    --transition: transform .75s cubic-bezier(.075, 0.5, 0, 1)
+   --text: #fff;
+   --link: #e34234;
+   --link-hover: #ba160c;
 }
 
 html{
@@ -38,9 +41,7 @@ body::-webkit-scrollbar {
   background-image: url(./img/images/Ресурс\ 1.png), url(./img/images/Ресурс\ 2.png), url(./img/images/Ресурс\ 4.png), url(./img/images/Ресурс\ 5.png);
   background-position: right top , left -17rem top -6rem , right -5.6rem bottom -16.7rem, left 1rem bottom 5rem;
   background-repeat: no-repeat;
-}
-
-
+} 
 
 
 

@@ -175,6 +175,34 @@ async function formSubmit() {
 
 
 
+  var splide = new Splide( '.splide', {
+    perPage : 3,
+    gap : '.2rem',
+    breakpoints: {
+      640: {
+        perPage: 2,
+        gap : '.2rem',
+      },
+      480: {
+        perPage: 1,
+        gap : '.2rem'
+      },
+    },
+  } );
+  
+  splide.mount();
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
